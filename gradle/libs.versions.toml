@@ -1,0 +1,21 @@
+[versions]
+core-kotlin = "1.9.23"
+core-ktor = "2.3.10"
+
+netty-logback = "1.5.6"
+
+koin = "3.5.6"
+
+[libraries]
+
+#ktor
+ktor-core-jvm = { module = "io.ktor:ktor-server-core-jvm" }
+ktor-netty-jvm = { module = "io.ktor:ktor-server-netty-jvm" }
+ktor-server-websockets = { module = "io.ktor:ktor-server-websockets-jvm" }
+ktor-client-java = { module = "io.ktor:ktor-client-java" }
+
+#netty
+netty-logback = { module = "ch.qos.logback:logback-classic", version.ref = "netty-logback" }
+
+#koin
+koin = { module = "io.insert-koin:koin-ktor", version.ref = "koin" }
