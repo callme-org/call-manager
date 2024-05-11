@@ -29,7 +29,7 @@ private fun Application.installPlugins() {
         modules(appModule)
     }
     install(WebSockets) {
-        timeout = Duration.ofSeconds(15)
+        timeout = Duration.ofMinutes(15)
         maxFrameSize = Long.MAX_VALUE
         masking = false
     }
