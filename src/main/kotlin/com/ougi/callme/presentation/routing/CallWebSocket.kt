@@ -38,6 +38,7 @@ fun Routing.configureCallWebSocket() {
 
         try {
             for (frame in incoming) {
+                frame as? Frame.Text ?: continue
                 connections
                     .filter { connection -> connection.callId == callId }
                     .filterNot { connection -> connection.login == login }
