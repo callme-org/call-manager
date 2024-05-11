@@ -29,7 +29,6 @@ private fun Application.installPlugins() {
         modules(appModule)
     }
     install(WebSockets) {
-        pingPeriod = Duration.ofSeconds(15)
         timeout = Duration.ofSeconds(15)
         maxFrameSize = Long.MAX_VALUE
         masking = false
